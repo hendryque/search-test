@@ -3,7 +3,7 @@ Steps to reproduce:
 1. Start up a new Jekyll site: `jekyll new search-test`
 2. Add plugin to the `Gemfile`:
 
-  ```
+  ```Ruby
   group :jekyll_plugins do
     gem "jekyll_pages_api_search"
   end
@@ -12,7 +12,7 @@ Steps to reproduce:
 3. Run `bundle install`
 4. Add configuration to `_config.yml`:
 
-  ```
+  ```YAML
   jekyll_pages_api_search:
     index_fields:
       title:
