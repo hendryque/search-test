@@ -2,19 +2,23 @@ Steps to reproduce:
 
 1. Start up a new Jekyll site: `jekyll new search-test`
 2. Add plugin to the `Gemfile`:
+
   ```
   group :jekyll_plugins do
     gem "jekyll_pages_api_search"
   end
   ```
+
 3. Run `bundle install`
 4. Add configuration to `_config.yml`:
+
   ```
   jekyll_pages_api_search:
     index_fields:
       title:
         boost: 10
   ```
+
 5. Run `bundle exec jekyll build`
 
 Result:
